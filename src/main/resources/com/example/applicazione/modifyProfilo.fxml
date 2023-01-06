@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="333.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.applicazione.ModProfiloGUIController">
+   <children>
+      <ImageView fitHeight="335.0" fitWidth="600.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG_0592.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="65.0" layoutY="8.0" text="DIVERSWORLD" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="menu" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" onAction="#menuButtonClicked" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@menu.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="search" layoutX="543.0" layoutY="18.0" mnemonicParsing="false" onAction="#searchButtonClicked" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@search.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="177.0" layoutY="69.0" text="Modify your account" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Name" layoutX="236.0" layoutY="145.0" onAction="#modName" prefHeight="25.0" prefWidth="196.0" promptText="NAME" style="-fx-background-color: white;" />
+      <TextField fx:id="Lastname" layoutX="236.0" layoutY="175.0" onAction="#modLast" prefHeight="25.0" prefWidth="196.0" promptText="LASTNAME" />
+      <TextField fx:id="BDate" layoutX="236.0" layoutY="205.0" onAction="#modBDate" prefHeight="25.0" prefWidth="196.0" promptText="BIRTH DATE" />
+      <TextField fx:id="email" layoutX="236.0" layoutY="235.0" onAction="#modEmail" prefHeight="25.0" prefWidth="196.0" promptText="EMAIL" />
+      <TextField fx:id="licNumb" layoutX="236.0" layoutY="295.0" onAction="#modLicNumb" prefHeight="25.0" prefWidth="196.0" promptText="LICENSE NUMBER" />
+      <TextField fx:id="Username" layoutX="236.0" layoutY="115.0" onAction="#modUsername" prefHeight="25.0" prefWidth="196.0" promptText="USERNAME" style="-fx-background-color: white;" />
+      <TextField fx:id="pass" layoutX="236.0" layoutY="265.0" onAction="#modPass" prefHeight="25.0" prefWidth="196.0" promptText="PASSWORD" />
+      <Button fx:id="modPic" layoutX="40.0" layoutY="130.0" maxHeight="150.0" maxWidth="200.0" mnemonicParsing="false" onAction="#modPic" prefHeight="150.0" prefWidth="158.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@profile.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="save" layoutX="542.0" layoutY="295.0" mnemonicParsing="false" onAction="#saveModifiche" style="-fx-background-color: white;" text="SAVE" />
+   </children>
+</Pane>
