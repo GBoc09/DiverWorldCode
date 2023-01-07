@@ -31,13 +31,14 @@ public class HomeController {
     private Button user;
 
    private UserBean loggedUser = null;
+   private String LoginPage = "logGUI.fxml";
     @FXML
     void bagButtonClicked(ActionEvent event) throws IOException {
         if (loggedUser == null) {
             Stage stage = (Stage)free.getScene().getWindow();
             stage.close();
             Stage primaryStage = new Stage();
-            Parent root = FXMLLoader.load(getClass().getResource("logGUI.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource(LoginPage));
             primaryStage.setTitle("You have to login!");
             primaryStage.setScene(new Scene(root, 600, 333));
             primaryStage.show();
@@ -51,7 +52,7 @@ public class HomeController {
             Stage stage = (Stage)free.getScene().getWindow();
             stage.close();
             Stage primaryStage = new Stage();
-            Parent root = FXMLLoader.load(getClass().getResource("logGUI.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource(LoginPage));
             primaryStage.setTitle("You have to login!");
             primaryStage.setScene(new Scene(root, 600, 333));
             primaryStage.show();
@@ -78,7 +79,7 @@ public class HomeController {
             Stage stage = (Stage)free.getScene().getWindow();
             stage.close();
             Stage primaryStage = new Stage();
-            Parent root = FXMLLoader.load(getClass().getResource("logGUI.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource(LoginPage));
             primaryStage.setTitle("You have to login!");
             primaryStage.setScene(new Scene(root, 600, 333));
             primaryStage.show();
@@ -113,7 +114,7 @@ public class HomeController {
         Stage stage = (Stage)user.getScene().getWindow();
         stage.close();
         Stage primaryStage = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("logGUI.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource(LoginPage));
         primaryStage.setTitle("Login");
         primaryStage.setScene(new Scene(root, 600, 333));
         primaryStage.show();
