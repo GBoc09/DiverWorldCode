@@ -48,7 +48,7 @@ public class accountControllerG {
         String data = dateBirth.getText();
         String brevetto = license.getText();
         String mail = email.getText();
-        String pw  = pass.getText();
+        String pass  = pass.getText();
 
         /**
          * VERIFICA CORRETTEZZA NOME E COGNOME*/
