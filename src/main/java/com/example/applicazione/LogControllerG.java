@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class logControllerG {
+public class LogControllerG {
 
     private LogBean bean = new LogBean();
     /**

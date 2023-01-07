@@ -11,7 +11,6 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.time.format.DateTimeFormatter;
 
 public class AccountControllerG {
 
@@ -48,58 +47,7 @@ public class AccountControllerG {
         String data = dateBirth.getText();
         String brevetto = license.getText();
         String mail = email.getText();
-        String pw  = pass.getText();
-
-
-        /**
-         * VERIFICA CORRETTEZZA NOME E COGNOME*/
-        Integer check= 0;
-        boolean ret = false;
-        if(nome.matches("^[\\w]+$") && cognome.matches("^[\\w]+$")) {
-            check = 0;
-        } else {
-            check += check;
-        }
-        if (check == 1) {
-            System.out.println("Invalid");
-            name.setText("");
-            surname.setText("");
-        } else {
-            ret = true;
-            System.out.println("Valid name and surname");
-        }
-        /**
-         * VERIFICA CORRETTEZZA EMAIL
-         */
-        String emailRegex = "^[a-zA-Z0-9_+&*-]+(?:\\." + "[a-zA-Z0-9_+&*-]+)*@" + "(?:[a-zA-Z0-9-]+\\.)+[a-z" + "A-Z]{2,7}$";
-        ret = mail.matches(emailRegex);
-        if (ret == false) {
-            email.setText("");
-            System.out.println("Invalid email address");
-        }
-        /**
-         * VERIFICA CORRETTEZZA FORMATO DELLA DATA DI NASCITA
-         *                                  !!bisogna aggiungere la correttezza dei giorni e dei mesi!!
-         */
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/mm/yyyy");
-        try {
-            formatter.parse(data);
-            System.out.println("Valid date");
-        } catch (Exception e) {
-            System.out.println("Invalid date");
-            dateBirth.setText("");
-        }
-        /**
-         * VERIFICA CORRETTEZZA CHE IL NUMERO DI BREVETTO CONTENCA SOLO NUMERI
-         */
-        if(brevetto.matches("\\d")) {
-            System.out.println("License number is correct");
-        }else {
-            license.setText("");
-            System.out.println("License number is incorrect");
-        }
-
-
+        String pw = pass.getText();
     }
 
 
