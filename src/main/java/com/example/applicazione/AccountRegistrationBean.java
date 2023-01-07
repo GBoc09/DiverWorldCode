@@ -110,7 +110,7 @@ public class AccountRegistrationBean {
     }
     public Boolean validateEmail(String email){
         // verifico il formato di formattazione dell'email
-        return email.matches("[0-9a-z]+[\\.[0-9a-z]+]*@[0-9a-z]+[\\.[0-9a.z]+]*");
+        return email.matches("[0-9a-z]+[\\.[0-9a-z]+]*@[0-9a-z]+[[0-9a.z]+]*");
     }
 
 }
