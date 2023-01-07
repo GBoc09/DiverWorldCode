@@ -45,7 +45,6 @@ public class ModProfiloGUIController {
 
     @FXML
     void menuButtonClicked(ActionEvent event) throws IOException {
-        //System.out.println("... showing menu ...");
         Stage stage = (Stage)menu.getScene().getWindow();
         stage.close();
         Stage primaryStage = new Stage();
@@ -57,47 +56,47 @@ public class ModProfiloGUIController {
 
     @FXML
     void modBDate(ActionEvent event) {
-
+        // think about
     }
 
     @FXML
     void modEmail(ActionEvent event) {
-
+        // think about
     }
 
     @FXML
     void modLast(ActionEvent event) {
-
+        // think about
     }
 
     @FXML
     void modLicNumb(ActionEvent event) {
-
+        // think about
     }
 
     @FXML
     void modName(ActionEvent event) {
-
+        // think about
     }
 
     @FXML
     void modPass(ActionEvent event) {
-
+        // think about
     }
 
     @FXML
     void modPic(ActionEvent event) {
-
+        // think about
     }
 
     @FXML
     void saveModifiche(ActionEvent event) {
-
+        //think about
     }
 
     @FXML
     void searchButtonClicked(ActionEvent event) {
-
+        // think about
     }
 
 }

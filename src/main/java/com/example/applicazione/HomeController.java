@@ -56,7 +56,7 @@ public class HomeController {
             primaryStage.setTitle("You have to login!");
             primaryStage.setScene(new Scene(root, 600, 333));
             primaryStage.show();
-        } else { System.out.println("Welcome Free Divers!");
+        } else {
             Stage stage = (Stage)free.getScene().getWindow();
             stage.close();
             Stage primaryStage = new Stage();
@@ -70,7 +70,7 @@ public class HomeController {
 
     @FXML
     void menuButtonClicked(ActionEvent event) {
-
+        // think about
     }
 
     @FXML
@@ -84,7 +84,6 @@ public class HomeController {
             primaryStage.setScene(new Scene(root, 600, 333));
             primaryStage.show();
         }else{
-            //System.out.println("Welcome Scuba Divers!");
             Stage stage = (Stage)scuba.getScene().getWindow();
             stage.close();
             Stage primaryStage = new Stage();
@@ -98,7 +97,6 @@ public class HomeController {
 
     @FXML
     void searchButtonClicked(ActionEvent event) throws IOException {
-        //System.out.println("... research page ...");
         Stage stage = (Stage)search.getScene().getWindow();
         stage.close();
         Stage primaryStage = new Stage();
@@ -110,7 +108,6 @@ public class HomeController {
 
     @FXML
     void userButtonClicked(ActionEvent event) throws IOException {
-        System.out.println("You will be redirected to the log in page");
         Stage stage = (Stage)user.getScene().getWindow();
         stage.close();
         Stage primaryStage = new Stage();

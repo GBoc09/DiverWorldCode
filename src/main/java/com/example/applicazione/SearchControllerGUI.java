@@ -23,12 +23,11 @@ public class SearchControllerGUI {
 
     @FXML
     void go(ActionEvent event) {
-
+        // devo pensare
     }
 
     @FXML
     void menuButtonClicked(ActionEvent event) throws IOException {
-        //System.out.println("... showing menu ...");
         Stage stage = (Stage)menu.getScene().getWindow();
         stage.close();
         Stage primaryStage = new Stage();
@@ -40,7 +39,7 @@ public class SearchControllerGUI {
 
     @FXML
     void yourProfile(ActionEvent event) {
-
+        // devo pensare ancora a cossa fare
     }
 
 }
