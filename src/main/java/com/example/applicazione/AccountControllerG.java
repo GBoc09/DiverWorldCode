@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.time.format.DateTimeFormatter;
 
-public class accountControllerG {
+public class AccountControllerG {
 
     @FXML
     private TextField dateBirth;
@@ -37,7 +37,7 @@ public class accountControllerG {
     private Button signIn;
 
     @FXML
-    void SingInButtonClicked(ActionEvent event) {
+    void signInButtonClicked(ActionEvent event) {
         /** gli utenti scrivono i loro dati all'interno delle label del form per la registrazione, cliccando su SIGN IN
          per inviare il form, si attiva una procedura all'interno della bean del log in che verifica la correttezza
          dei dati inseriti, se la verifica va a buon fine viene stampato a schermo il messaggio WELCOME ..., altrimenti
@@ -92,7 +92,7 @@ public class accountControllerG {
         /**
          * VERIFICA CORRETTEZZA CHE IL NUMERO DI BREVETTO CONTENCA SOLO NUMERI
          */
-        if(brevetto.matches("[0-9]+")) {
+        if(brevetto.matches("\\d")) {
             System.out.println("License number is correct");
         }else {
             license.setText("");

@@ -10,10 +10,16 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class freeControllerG {
+public class ScubaControllerG {
 
     @FXML
-    private Button bookFreeCourse;
+    private Button bag;
+
+    @FXML
+    private Button bookCourse;
+
+    @FXML
+    private Button equip;
 
     @FXML
     private Button menu;
@@ -26,16 +32,34 @@ public class freeControllerG {
     @FXML
     private Button logBook;
 
-    @FXML
-    void bookFreeCourse(ActionEvent event) {
 
+    @FXML
+    void bagButtonClicked(ActionEvent event) throws IOException {
+        System.out.println("Your Cart");
+        Stage stage = (Stage)bag.getScene().getWindow();
+        stage.close();
+        Stage primaryStage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("cartGUI.fxml"));
+        primaryStage.setTitle("What's on your cart?");
+        primaryStage.setScene(new Scene(root, 600, 333));
+        primaryStage.show();
+    }
+
+    @FXML
+    void bookScubaCourse(ActionEvent event) throws IOException {
+        System.out.println("Chose a course");
+        Stage stage = (Stage)bookCourse.getScene().getWindow();
+        stage.close();
+        Stage primaryStage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("scubaCourseGUI.fxml"));
+        primaryStage.setTitle("Scuba Courses");
+        primaryStage.setScene(new Scene(root, 600, 333));
+        primaryStage.show();
     }
     @FXML
     void logBook(ActionEvent event) {
 
     }
-
-
     @FXML
     void menuButtonClicked(ActionEvent event) throws IOException {
         System.out.println("... showing menu ...");
@@ -46,6 +70,19 @@ public class freeControllerG {
         primaryStage.setTitle("DIVERSWORLD");
         primaryStage.setScene(new Scene(root, 600, 333));
         primaryStage.show();
+    }
+
+    @FXML
+    void rentEquip(ActionEvent event) throws IOException {
+        System.out.println("... Rent Equipment ...");
+        Stage stage = (Stage)equip.getScene().getWindow();
+        stage.close();
+        Stage primaryStage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("rentGUI.fxml"));
+        primaryStage.setTitle("Rent Equip");
+        primaryStage.setScene(new Scene(root, 600, 333));
+        primaryStage.show();
+
     }
 
     @FXML
@@ -73,3 +110,4 @@ public class freeControllerG {
     }
 
 }
+

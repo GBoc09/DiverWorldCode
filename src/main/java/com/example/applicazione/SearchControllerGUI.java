@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class searchControllerGUI {
+public class SearchControllerGUI {
 
     @FXML
     private Button go;

@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class rentControllerGUI {
+public class RentControllerGUI {
     ObservableList<String> equipList = FXCollections.observableArrayList("GAV", "Regulator", "Mask", "Finns", "Weight", "Suit");
         @FXML
         private Button bag;

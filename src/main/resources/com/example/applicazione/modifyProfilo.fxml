@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="333.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.applicazione.ModProfiloGUIController">
    <children>
       <ImageView fitHeight="335.0" fitWidth="600.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
@@ -44,13 +43,12 @@
             <Font name="System Bold" size="25.0" />
          </font>
       </Label>
-      <TextField fx:id="Name" layoutX="236.0" layoutY="145.0" onAction="#modName" prefHeight="25.0" prefWidth="196.0" promptText="NAME" style="-fx-background-color: white;" />
-      <TextField fx:id="Lastname" layoutX="236.0" layoutY="175.0" onAction="#modLast" prefHeight="25.0" prefWidth="196.0" promptText="LASTNAME" />
-      <TextField fx:id="BDate" layoutX="236.0" layoutY="205.0" onAction="#modBDate" prefHeight="25.0" prefWidth="196.0" promptText="BIRTH DATE" />
-      <TextField fx:id="email" layoutX="236.0" layoutY="235.0" onAction="#modEmail" prefHeight="25.0" prefWidth="196.0" promptText="EMAIL" />
-      <TextField fx:id="licNumb" layoutX="236.0" layoutY="295.0" onAction="#modLicNumb" prefHeight="25.0" prefWidth="196.0" promptText="LICENSE NUMBER" />
-      <TextField fx:id="Username" layoutX="236.0" layoutY="115.0" onAction="#modUsername" prefHeight="25.0" prefWidth="196.0" promptText="USERNAME" style="-fx-background-color: white;" />
-      <TextField fx:id="pass" layoutX="236.0" layoutY="265.0" onAction="#modPass" prefHeight="25.0" prefWidth="196.0" promptText="PASSWORD" />
+      <TextField fx:id="name" layoutX="236.0" layoutY="122.0" onAction="#modName" prefHeight="25.0" prefWidth="196.0" promptText="NAME" style="-fx-background-color: white;" />
+      <TextField fx:id="lastname" layoutX="236.0" layoutY="152.0" onAction="#modLast" prefHeight="25.0" prefWidth="196.0" promptText="LASTNAME" />
+      <TextField fx:id="bDate" layoutX="236.0" layoutY="182.0" onAction="#modBDate" prefHeight="25.0" prefWidth="196.0" promptText="BIRTH DATE" />
+      <TextField fx:id="email" layoutX="236.0" layoutY="212.0" onAction="#modEmail" prefHeight="25.0" prefWidth="196.0" promptText="EMAIL" />
+      <TextField fx:id="licNumb" layoutX="236.0" layoutY="272.0" onAction="#modLicNumb" prefHeight="25.0" prefWidth="196.0" promptText="LICENSE NUMBER" />
+      <TextField fx:id="pass" layoutX="236.0" layoutY="242.0" onAction="#modPass" prefHeight="25.0" prefWidth="196.0" promptText="PASSWORD" />
       <Button fx:id="modPic" layoutX="40.0" layoutY="130.0" maxHeight="150.0" maxWidth="200.0" mnemonicParsing="false" onAction="#modPic" prefHeight="150.0" prefWidth="158.0" style="-fx-background-color: white;">
          <graphic>
             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">

@@ -1,6 +1,6 @@
 package com.example.applicazione;
 
-public class logBean {
+public class LogBean {
     /**
      * vanno controllati: il campo data  è stato rimpito nel formato MM/DD/YYYY
      * se nome e cognome sono solo caratteri

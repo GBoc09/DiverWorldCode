@@ -10,10 +10,10 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class youControllerG {
+public class FreeControllerG {
 
     @FXML
-    private Button bag;
+    private Button bookFreeCourse;
 
     @FXML
     private Button menu;
@@ -22,12 +22,19 @@ public class youControllerG {
     private Button search;
 
     @FXML
-    private Button settings;
+    private Button user;
+    @FXML
+    private Button logBook;
 
     @FXML
-    void bagButtonClicked(ActionEvent event) {
+    void bookFreeCourse(ActionEvent event) {
 
     }
+    @FXML
+    void logBook(ActionEvent event) {
+
+    }
+
 
     @FXML
     void menuButtonClicked(ActionEvent event) throws IOException {
@@ -42,18 +49,6 @@ public class youControllerG {
     }
 
     @FXML
-    void modifyProfile(ActionEvent event) throws IOException {
-        System.out.println("... research page ...");
-        Stage stage = (Stage)search.getScene().getWindow();
-        stage.close();
-        Stage primaryStage = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("modifyProfilo.fxml"));
-        primaryStage.setTitle("Modify");
-        primaryStage.setScene(new Scene(root, 600, 333));
-        primaryStage.show();
-    }
-
-    @FXML
     void searchButtonClicked(ActionEvent event) throws IOException {
         System.out.println("... research page ...");
         Stage stage = (Stage)search.getScene().getWindow();
@@ -61,6 +56,18 @@ public class youControllerG {
         Stage primaryStage = new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("searchGUI.fxml"));
         primaryStage.setTitle("Research page");
+        primaryStage.setScene(new Scene(root, 600, 333));
+        primaryStage.show();
+    }
+
+    @FXML
+    void yourProfile(ActionEvent event) throws IOException {
+        System.out.println("Welcome on your dashboard");
+        Stage stage = (Stage)user.getScene().getWindow();
+        stage.close();
+        Stage primaryStage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("youGUI.fxml"));
+        primaryStage.setTitle("About You");
         primaryStage.setScene(new Scene(root, 600, 333));
         primaryStage.show();
     }

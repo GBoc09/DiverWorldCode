@@ -15,7 +15,7 @@ import java.io.IOException;
 
 public class logControllerG {
 
-    private logBean bean = new logBean();
+    private LogBean bean = new LogBean();
     /**
      * private logControllerG log = new logControllerG();
       */

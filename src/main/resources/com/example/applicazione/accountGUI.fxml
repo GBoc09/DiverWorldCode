@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="333.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.applicazione.accountControllerG">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="333.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.applicazione.AccountControllerG">
    <children>
       <ImageView fitHeight="335.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -40,7 +40,7 @@
       <TextField fx:id="dateBirth" layoutX="207.0" layoutY="166.0" prefHeight="25.0" prefWidth="190.0" promptText="BIRTH DATE " />
       <TextField fx:id="license" layoutX="207.0" layoutY="196.0" prefHeight="25.0" prefWidth="190.0" promptText="LICENSE NUMBER" />
       <TextField fx:id="email" layoutX="207.0" layoutY="226.0" prefHeight="25.0" prefWidth="190.0" promptText="EMAIL" />
-      <Button fx:id="signIn" layoutX="329.0" layoutY="288.0" mnemonicParsing="false" onAction="#SingInButtonClicked" style="-fx-background-color: white;" text="Sign In">
+      <Button fx:id="signIn" layoutX="329.0" layoutY="288.0" mnemonicParsing="false" onAction="#signInButtonClicked" style="-fx-background-color: white;" text="Sign In">
          <font>
             <Font size="15.0" />
          </font>

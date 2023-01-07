@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class scubaCourseControllerGUI {
+public class ScubaCourseControllerGUI {
 
     ObservableList<String> courseList = FXCollections.observableArrayList("Discover Scuba","Open Water", "Advanced", "Rescue", "Dive Master");
     @FXML

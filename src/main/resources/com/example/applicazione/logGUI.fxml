@@ -95,7 +95,7 @@
             <Font size="15.0" />
          </font>
       </Button>
-      <PasswordField fx:id="textPass" layoutX="14.0" layoutY="195.0" prefHeight="30.0" prefWidth="230.0" promptText="Insert Password">
+      <PasswordField fx:id="textPass" layoutX="14.0" layoutY="195.0" prefHeight="25.0" prefWidth="230.0" promptText="Insert Password">
          <font>
             <Font size="15.0" />
          </font>

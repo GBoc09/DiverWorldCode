@@ -6,42 +6,26 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class ModProfiloGUIController {
-
-    @FXML
-    private TextField bDate;
-
-    @FXML
-    private TextField lastname;
-
-    @FXML
-    private TextField name;
-
-    @FXML
-    private TextField email;
-
-    @FXML
-    private TextField licNumb;
+public class CartControllerGUI {
 
     @FXML
     private Button menu;
 
     @FXML
-    private Button modPic;
+    private Button modCart;
 
     @FXML
-    private TextField pass;
-
-    @FXML
-    private Button save;
+    private Button rentNow;
 
     @FXML
     private Button search;
+
+    @FXML
+    private Button user;
 
     @FXML
     void menuButtonClicked(ActionEvent event) throws IOException {
@@ -56,42 +40,12 @@ public class ModProfiloGUIController {
     }
 
     @FXML
-    void modBDate(ActionEvent event) {
+    void modCart(ActionEvent event) {
 
     }
 
     @FXML
-    void modEmail(ActionEvent event) {
-
-    }
-
-    @FXML
-    void modLast(ActionEvent event) {
-
-    }
-
-    @FXML
-    void modLicNumb(ActionEvent event) {
-
-    }
-
-    @FXML
-    void modName(ActionEvent event) {
-
-    }
-
-    @FXML
-    void modPass(ActionEvent event) {
-
-    }
-
-    @FXML
-    void modPic(ActionEvent event) {
-
-    }
-
-    @FXML
-    void saveModifiche(ActionEvent event) {
+    void rentNow(ActionEvent event) {
 
     }
 
@@ -100,4 +54,17 @@ public class ModProfiloGUIController {
 
     }
 
+    @FXML
+    void yourProfile(ActionEvent event) throws IOException {
+        System.out.println("Welcome on your dashboard");
+        Stage stage = (Stage)user.getScene().getWindow();
+        stage.close();
+        Stage primaryStage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("youGUI.fxml"));
+        primaryStage.setTitle("About You");
+        primaryStage.setScene(new Scene(root, 600, 333));
+        primaryStage.show();
+    }
+
 }
+
