@@ -38,13 +38,13 @@ public class RentControllerGUI {
             equipBox.setValue("select types");
         }
         @FXML
-        void DBrent(ActionEvent event) {
+        void dbRent(ActionEvent event) {
 
         }
 
         @FXML
         void bagButtonClicked(ActionEvent event) throws IOException {
-            System.out.println("Your Cart");
+            //System.out.println("Your Cart");
             Stage stage = (Stage)bag.getScene().getWindow();
             stage.close();
             Stage primaryStage = new Stage();
@@ -56,7 +56,7 @@ public class RentControllerGUI {
 
         @FXML
         void menuButtonClicked(ActionEvent event) throws IOException {
-            System.out.println("... showing menu ...");
+            //System.out.println("... showing menu ...");
             Stage stage = (Stage)menu.getScene().getWindow();
             stage.close();
             Stage primaryStage = new Stage();
@@ -68,7 +68,7 @@ public class RentControllerGUI {
 
         @FXML
         void searchButtonClicked(ActionEvent event) throws IOException {
-            System.out.println("... research page ...");
+            //System.out.println("... research page ...");
             Stage stage = (Stage)search.getScene().getWindow();
             stage.close();
             Stage primaryStage = new Stage();
@@ -80,7 +80,7 @@ public class RentControllerGUI {
 
         @FXML
         void yourProfile(ActionEvent event) throws IOException {
-            System.out.println("Welcome on your dashboard");
+            //System.out.println("Welcome on your dashboard");
             Stage stage = (Stage)user.getScene().getWindow();
             stage.close();
             Stage primaryStage = new Stage();

@@ -37,17 +37,6 @@ public class AccountControllerG {
 
     @FXML
     void signInButtonClicked(ActionEvent event) {
-        /** gli utenti scrivono i loro dati all'interno delle label del form per la registrazione, cliccando su SIGN IN
-         per inviare il form, si attiva una procedura all'interno della bean del log in che verifica la correttezza
-         dei dati inseriti, se la verifica va a buon fine viene stampato a schermo il messaggio WELCOME ..., altrimenti
-         viene ricaricata la pagina del form e con un messaggio (LA PROCEDURA DI ISCRIZIONE NON è ANDATA A BUON FINE
-         PREGO INSERIRE NUOVAMENTE I DATI) */
-        String nome = name.getText();
-        String cognome = surname.getText();
-        String data = dateBirth.getText();
-        String brevetto = license.getText();
-        String mail = email.getText();
-        String pw = pass.getText();
     }
 
 

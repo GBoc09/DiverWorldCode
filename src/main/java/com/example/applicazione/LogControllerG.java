@@ -48,12 +48,12 @@ public class LogControllerG {
 
 
     @FXML
-    void FacebookButtonClicked(ActionEvent event) {
+    void facebookButtonClicked(ActionEvent event) {
 
     }
 
     @FXML
-    void GoogleButtonClicked(ActionEvent event) {
+    void googleButtonClicked(ActionEvent event) {
 
     }
 

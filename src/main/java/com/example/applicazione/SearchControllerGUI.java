@@ -28,7 +28,7 @@ public class SearchControllerGUI {
 
     @FXML
     void menuButtonClicked(ActionEvent event) throws IOException {
-        System.out.println("... showing menu ...");
+        //System.out.println("... showing menu ...");
         Stage stage = (Stage)menu.getScene().getWindow();
         stage.close();
         Stage primaryStage = new Stage();

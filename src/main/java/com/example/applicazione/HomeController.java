@@ -84,7 +84,7 @@ public class HomeController {
             primaryStage.setScene(new Scene(root, 600, 333));
             primaryStage.show();
         }else{
-            System.out.println("Welcome Scuba Divers!");
+            //System.out.println("Welcome Scuba Divers!");
             Stage stage = (Stage)scuba.getScene().getWindow();
             stage.close();
             Stage primaryStage = new Stage();
@@ -98,7 +98,7 @@ public class HomeController {
 
     @FXML
     void searchButtonClicked(ActionEvent event) throws IOException {
-        System.out.println("... research page ...");
+        //System.out.println("... research page ...");
         Stage stage = (Stage)search.getScene().getWindow();
         stage.close();
         Stage primaryStage = new Stage();

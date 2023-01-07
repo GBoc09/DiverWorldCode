@@ -11,8 +11,6 @@ public class ProfileManagement {
             "abcdefghijklmnopqrstuvwxyz",
             "0123456789",
             "@.$&£"};
-
-    private void ProfileManagement() {}
         public static Integer getMinPassLenght(){
             return MIN_PASS_LENGHT;
         }

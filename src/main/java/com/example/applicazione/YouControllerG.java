@@ -31,7 +31,7 @@ public class YouControllerG {
 
     @FXML
     void menuButtonClicked(ActionEvent event) throws IOException {
-        System.out.println("... showing menu ...");
+        //System.out.println("... showing menu ...");
         Stage stage = (Stage)menu.getScene().getWindow();
         stage.close();
         Stage primaryStage = new Stage();
@@ -43,7 +43,7 @@ public class YouControllerG {
 
     @FXML
     void modifyProfile(ActionEvent event) throws IOException {
-        System.out.println("... research page ...");
+        //System.out.println("... research page ...");
         Stage stage = (Stage)search.getScene().getWindow();
         stage.close();
         Stage primaryStage = new Stage();
@@ -55,7 +55,7 @@ public class YouControllerG {
 
     @FXML
     void searchButtonClicked(ActionEvent event) throws IOException {
-        System.out.println("... research page ...");
+        //System.out.println("... research page ...");
         Stage stage = (Stage)search.getScene().getWindow();
         stage.close();
         Stage primaryStage = new Stage();
