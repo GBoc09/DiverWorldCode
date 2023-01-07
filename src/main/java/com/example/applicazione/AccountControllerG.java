@@ -37,12 +37,12 @@ public class AccountControllerG {
 
     @FXML
     void signInButtonClicked(ActionEvent event) {
+        // think about
     }
 
 
     @FXML
     void bagButtonClicked(ActionEvent event) throws IOException {
-        System.out.println("Your Cart");
         Stage stage = (Stage)bag.getScene().getWindow();
         stage.close();
         Stage primaryStage = new Stage();
@@ -54,7 +54,6 @@ public class AccountControllerG {
 
     @FXML
     void menuButtonClicked(ActionEvent event) throws IOException {
-        System.out.println("... showing menu ...");
         Stage stage = (Stage)menu.getScene().getWindow();
         stage.close();
         Stage primaryStage = new Stage();
@@ -66,7 +65,6 @@ public class AccountControllerG {
 
     @FXML
     void searchButtonClicked(ActionEvent event) throws IOException {
-        System.out.println("... research page ...");
         Stage stage = (Stage)search.getScene().getWindow();
         stage.close();
         Stage primaryStage = new Stage();

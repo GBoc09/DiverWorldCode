@@ -28,17 +28,16 @@ public class FreeControllerG {
 
     @FXML
     void bookFreeCourse(ActionEvent event) {
-
+        // think about
     }
     @FXML
     void logBook(ActionEvent event) {
-
+        // think about
     }
 
 
     @FXML
     void menuButtonClicked(ActionEvent event) throws IOException {
-        //System.out.println("... showing menu ...");
         Stage stage = (Stage)menu.getScene().getWindow();
         stage.close();
         Stage primaryStage = new Stage();
@@ -50,7 +49,6 @@ public class FreeControllerG {
 
     @FXML
     void searchButtonClicked(ActionEvent event) throws IOException {
-        //System.out.println("... research page ...");
         Stage stage = (Stage)search.getScene().getWindow();
         stage.close();
         Stage primaryStage = new Stage();
@@ -62,7 +60,6 @@ public class FreeControllerG {
 
     @FXML
     void yourProfile(ActionEvent event) throws IOException {
-        //System.out.println("Welcome on your dashboard");
         Stage stage = (Stage)user.getScene().getWindow();
         stage.close();
         Stage primaryStage = new Stage();

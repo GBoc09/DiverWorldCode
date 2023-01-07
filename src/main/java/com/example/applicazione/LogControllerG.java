@@ -49,17 +49,16 @@ public class LogControllerG {
 
     @FXML
     void facebookButtonClicked(ActionEvent event) {
-
+        // dummy
     }
 
     @FXML
     void googleButtonClicked(ActionEvent event) {
-
+        // dummy
     }
 
     @FXML
     void createAccount(ActionEvent event) throws IOException {
-        System.out.println("... creating account process is running ...");
         Stage stage = (Stage)account.getScene().getWindow();
         stage.close();
         Stage primaryStage = new Stage();
@@ -79,10 +78,10 @@ public class LogControllerG {
          *            UserBean me = log.getUserByLoginData(bean);
          *         }
          */
+        // think about
     }
     @FXML
     void menuButtonClicked(ActionEvent event) throws IOException {
-        System.out.println("... showing menu ...");
         Stage stage = (Stage)menu.getScene().getWindow();
         stage.close();
         Stage primaryStage = new Stage();
@@ -94,7 +93,6 @@ public class LogControllerG {
 
     @FXML
     void searchButtonClicked(ActionEvent event) throws IOException {
-        System.out.println("... research page ...");
         Stage stage = (Stage)search.getScene().getWindow();
         stage.close();
         Stage primaryStage = new Stage();

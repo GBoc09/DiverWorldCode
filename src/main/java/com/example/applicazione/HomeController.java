@@ -32,6 +32,7 @@ public class HomeController {
 
    private UserBean loggedUser = null;
    private String loginPage = "logGUI.fxml";
+   private String title = "You have to login!";
     @FXML
     void bagButtonClicked(ActionEvent event) throws IOException {
         if (loggedUser == null) {
@@ -39,7 +40,7 @@ public class HomeController {
             stage.close();
             Stage primaryStage = new Stage();
             Parent root = FXMLLoader.load(getClass().getResource(loginPage));
-            primaryStage.setTitle("You have to login!");
+            primaryStage.setTitle(title);
             primaryStage.setScene(new Scene(root, 600, 333));
             primaryStage.show();
         }
@@ -53,7 +54,7 @@ public class HomeController {
             stage.close();
             Stage primaryStage = new Stage();
             Parent root = FXMLLoader.load(getClass().getResource(loginPage));
-            primaryStage.setTitle("You have to login!");
+            primaryStage.setTitle(title);
             primaryStage.setScene(new Scene(root, 600, 333));
             primaryStage.show();
         } else {
@@ -80,7 +81,7 @@ public class HomeController {
             stage.close();
             Stage primaryStage = new Stage();
             Parent root = FXMLLoader.load(getClass().getResource(loginPage));
-            primaryStage.setTitle("You have to login!");
+            primaryStage.setTitle(title);
             primaryStage.setScene(new Scene(root, 600, 333));
             primaryStage.show();
         }else{

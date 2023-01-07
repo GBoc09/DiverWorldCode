@@ -17,7 +17,7 @@ public class MyConnection {
                     e.printStackTrace();
         }
     }
-    public MyConnection getInstance() {
+    public static MyConnection getInstance() {
         if (instance == null){
             instance = new MyConnection();
         }

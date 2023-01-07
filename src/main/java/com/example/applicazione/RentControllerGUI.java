@@ -39,12 +39,11 @@ public class RentControllerGUI {
         }
         @FXML
         void dbRent(ActionEvent event) {
-
+            // think about
         }
 
         @FXML
         void bagButtonClicked(ActionEvent event) throws IOException {
-            //System.out.println("Your Cart");
             Stage stage = (Stage)bag.getScene().getWindow();
             stage.close();
             Stage primaryStage = new Stage();
@@ -56,7 +55,6 @@ public class RentControllerGUI {
 
         @FXML
         void menuButtonClicked(ActionEvent event) throws IOException {
-            //System.out.println("... showing menu ...");
             Stage stage = (Stage)menu.getScene().getWindow();
             stage.close();
             Stage primaryStage = new Stage();
@@ -68,7 +66,6 @@ public class RentControllerGUI {
 
         @FXML
         void searchButtonClicked(ActionEvent event) throws IOException {
-            //System.out.println("... research page ...");
             Stage stage = (Stage)search.getScene().getWindow();
             stage.close();
             Stage primaryStage = new Stage();
@@ -80,7 +77,6 @@ public class RentControllerGUI {
 
         @FXML
         void yourProfile(ActionEvent event) throws IOException {
-            //System.out.println("Welcome on your dashboard");
             Stage stage = (Stage)user.getScene().getWindow();
             stage.close();
             Stage primaryStage = new Stage();
