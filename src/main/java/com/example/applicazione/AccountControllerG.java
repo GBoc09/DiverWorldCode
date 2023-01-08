@@ -5,17 +5,17 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.sql.Date;
+import java.time.ZoneId;
 
 public class AccountControllerG {
 
     @FXML
-    private TextField dateBirth;
+    private DatePicker dateBirth;
     @FXML
     private TextField email;
     @FXML
@@ -25,7 +25,10 @@ public class AccountControllerG {
     @FXML
     private PasswordField pass;
     @FXML
-    private TextField surname;
+    private PasswordField pass1;
+
+    @FXML
+    private TextField lastname;
     @FXML
     private Button bag;
     @FXML
@@ -34,10 +37,80 @@ public class AccountControllerG {
     private Button search;
     @FXML
     private Button signIn;
-
     @FXML
-    void signInButtonClicked(ActionEvent event) {
-        // think about
+    private Label errorLabel;
+
+   LogInControllerApplicativo regController = new LogInControllerApplicativo();
+    @FXML
+    private Boolean verfyInsert(AccountRegistrationBean rBean) {
+        if (Boolean.TRUE.equals(checkEmpty())){
+            errorLabel.setText("Insert all fields");
+            return false;
+        }
+        if (dateBirth.getValue() == null) {
+            errorLabel.setText("Insert a birth date");
+            return false;
+        }
+        if (!pass.getText().equals(pass1.getText())){
+            errorLabel.setText("Password field must be the same");
+            return false;
+        }
+        if(Boolean.FALSE.equals(rBean.validateName(name.getText()))) {
+            errorLabel.setText("insert a correct name");
+            return false;
+        }else {
+            rBean.setName(name.getText());
+        }
+        if(Boolean.FALSE.equals(rBean.validateLastname(lastname.getText()))){
+            errorLabel.setText("Insert a correct lastname");
+            return false;
+        } else {
+            rBean.setLastname(lastname.getText());
+        }
+        if(Boolean.FALSE.equals(rBean.validateEmail(email.getText()))){
+            errorLabel.setText("Insert a correct email");
+            return false;
+        } else {
+            rBean.setEmail(email.getText());
+        }
+        if(Boolean.FALSE.equals(rBean.validatePassword(pass.getText()))){
+            errorLabel.setText("Insert a correct password [8-16 chars, containing numbers, letters and a " +
+                    "special characters]");
+            return false;
+        } else {
+            rBean.setPassword(pass.getText());
+        }
+        Date data = (Date) Date.from(dateBirth.getValue().atStartOfDay(ZoneId.systemDefault()).toInstant());
+        rBean.setBirthDate(data);
+
+        return true;
+    }
+    public Boolean checkEmpty(){
+        TextField[] arrayOFNodes = {name, lastname, email, pass, pass1};
+        for(TextField field: arrayOFNodes) {
+            if(field.getText().equals("")){
+                return true;
+            }
+        }
+        return false;
+    }
+    //@Override
+    public void onExit(){
+        errorLabel.setText("");
+    }
+
+    void signInButtonClicked(ActionEvent event) throws IOException {
+        AccountRegistrationBean rBean = new AccountRegistrationBean();
+        if (Boolean.FALSE.equals(verfyInsert(rBean))){
+            return;
+        }
+        regController.register(rBean);
+        Stage stage = (Stage)bag.getScene().getWindow();
+        stage.close();
+        Stage primaryStage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("HomeGUI.fxml"));
+        primaryStage.setScene(new Scene(root, 600, 333));
+        primaryStage.show();
     }
 
 
