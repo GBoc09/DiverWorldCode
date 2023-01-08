@@ -95,8 +95,14 @@ public class ModProfiloGUIController {
     }
 
     @FXML
-    void searchButtonClicked(ActionEvent event) {
-        // think about
+    void searchButtonClicked(ActionEvent event) throws IOException {
+        Stage stage = (Stage)search.getScene().getWindow();
+        stage.close();
+        Stage primaryStage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("searchGUI.fxml"));
+        primaryStage.setTitle("DIVERSWORLD");
+        primaryStage.setScene(new Scene(root, 600, 333));
+        primaryStage.show();
     }
 
 }

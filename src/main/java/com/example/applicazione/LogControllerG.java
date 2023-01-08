@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
@@ -17,17 +18,18 @@ public class LogControllerG {
 
     private LogBean bean = new LogBean();
     /**
-     * private logControllerG log = new logControllerG();
+     * connessione con il controller applicativo del login
+     * private LogInControllerApplicativo log = new LogInControllerApplicativo();
       */
 
-    /**
-     * create accuont button
-     */
     @FXML
     private Button account;
 
     @FXML
     private Button facebook;
+    @FXML
+    private Label errorLabel;
+
 
     @FXML
     private ImageView google;
@@ -70,15 +72,17 @@ public class LogControllerG {
 
     @FXML
     void logButtonClicked(ActionEvent event) {
-        /**
-         *  bean.setUserID(textUser.getText());
-         *  bean.setPassword(textPass.getText());
-         *  try {
-         *            log.logButtonClicked(bean);
-         *            UserBean me = log.getUserByLoginData(bean);
-         *         }
-         */
-        // think about
+       bean.setUserID(textUser.getText());
+       bean.setPassword(textPass.getText());
+      /** try{
+       * log.logButtonClicked(bean);
+       * userBean me = log.getUserByLoginData(bean);
+       * bundle.addBean("loggedUser", me);
+       * bundle.addObject("mailbox", log.connect(me));
+
+       }catch (WrongLoginCredentialException e1) {
+       errorLabel.setText("Wrong credentials supplied, check your Email and Password!");
+       };*/
     }
     @FXML
     void menuButtonClicked(ActionEvent event) throws IOException {
@@ -101,6 +105,13 @@ public class LogControllerG {
         primaryStage.setScene(new Scene(root, 600, 333));
         primaryStage.show();
     }
+        //@Override
+        public void onExit(){
+            textUser.setText("");
+            textPass.setText("");
+            errorLabel.setText("");
+
+        }
 
 }
 

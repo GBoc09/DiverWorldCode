@@ -11,6 +11,8 @@ public class LogBean {
     protected String password;
 
     public void setUserID(String id){
+        // intedo la mail dell'utente
+        // non uso username particolari
         this.userID = id;
     }
     public String getUserId(){

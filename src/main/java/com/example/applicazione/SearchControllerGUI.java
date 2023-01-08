@@ -38,8 +38,14 @@ public class SearchControllerGUI {
     }
 
     @FXML
-    void yourProfile(ActionEvent event) {
-        // devo pensare ancora a cossa fare
+    void yourProfile(ActionEvent event) throws IOException {
+        Stage stage = (Stage)user.getScene().getWindow();
+        stage.close();
+        Stage primaryStage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("youGUI.fxml"));
+        primaryStage.setTitle("About You!");
+        primaryStage.setScene(new Scene(root, 600, 333));
+        primaryStage.show();
     }
 
 }

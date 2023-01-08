@@ -58,7 +58,7 @@
             <Font name="System Bold" size="20.0" />
          </font>
       </Label>
-      <Button layoutX="329.0" layoutY="150.0" mnemonicParsing="false" onAction="#GoogleButtonClicked" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: white;">
+      <Button layoutX="329.0" layoutY="150.0" mnemonicParsing="false" onAction="#googleButtonClicked" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: white;">
          <graphic>
             <ImageView fx:id="google" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -67,7 +67,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="facebook" layoutX="406.0" layoutY="150.0" mnemonicParsing="false" onAction="#FacebookButtonClicked" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: white;">
+      <Button fx:id="facebook" layoutX="406.0" layoutY="150.0" mnemonicParsing="false" onAction="#facebookButtonClicked" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: white;">
          <graphic>
             <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                <image>

@@ -36,7 +36,7 @@ public class HomeController {
     @FXML
     void bagButtonClicked(ActionEvent event) throws IOException {
         if (loggedUser == null) {
-            Stage stage = (Stage)free.getScene().getWindow();
+            Stage stage = (Stage)bag.getScene().getWindow();
             stage.close();
             Stage primaryStage = new Stage();
             Parent root = FXMLLoader.load(getClass().getResource(loginPage));
@@ -70,14 +70,20 @@ public class HomeController {
     }
 
     @FXML
-    void menuButtonClicked(ActionEvent event) {
-        // think about
+    void menuButtonClicked(ActionEvent event) throws IOException {
+        Stage stage = (Stage)menu.getScene().getWindow();
+        stage.close();
+        Stage primaryStage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("homeGUI.fxml"));
+        primaryStage.setTitle("Divers World");
+        primaryStage.setScene(new Scene(root, 600, 333));
+        primaryStage.show();
     }
 
     @FXML
     void scubaButtonClicked(ActionEvent event) throws IOException {
         if (loggedUser == null) {
-            Stage stage = (Stage)free.getScene().getWindow();
+            Stage stage = (Stage)scuba.getScene().getWindow();
             stage.close();
             Stage primaryStage = new Stage();
             Parent root = FXMLLoader.load(getClass().getResource(loginPage));

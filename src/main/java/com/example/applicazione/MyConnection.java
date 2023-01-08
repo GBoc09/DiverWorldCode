@@ -1,5 +1,5 @@
 package com.example.applicazione;
-import java.sql.*;
+/**
 public class MyConnection {
     private static MyConnection instance = null;
     private Connection con;
@@ -29,4 +29,4 @@ public class MyConnection {
 
 }
 
-
+*/
