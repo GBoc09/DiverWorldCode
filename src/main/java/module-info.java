@@ -4,6 +4,6 @@ module com.example.DiversWorld {
     requires java.sql;
 
 
-    opens com.example.diversWorld to javafx.fxml;
-    exports com.example.diversWorld;
+    opens com.example.diversworld to javafx.fxml;
+    exports com.example.diversworld;
 }
