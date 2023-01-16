@@ -23,6 +23,13 @@ public class YouControllerG {
 
     @FXML
     private Button settings;
+    @FXML
+    private Button logOut;
+
+    @FXML
+    void logout(ActionEvent event) {
+        // thinking about
+    }
 
     @FXML
     void bagButtonClicked(ActionEvent event) {

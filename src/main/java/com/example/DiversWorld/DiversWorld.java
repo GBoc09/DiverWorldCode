@@ -8,8 +8,11 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class DiversWorld extends Application {
+    // private Stage window;
+   // private Parent root;
     @Override
     public void start(Stage stage) throws IOException {
+        //window = stage;
         FXMLLoader fxmlLoader = new FXMLLoader(DiversWorld.class.getResource("homeGUI.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 333);
         stage.setTitle("DIVERS WORLD!");

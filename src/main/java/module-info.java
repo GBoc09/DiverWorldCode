@@ -1,9 +1,9 @@
-module com.example.applicazione {
+module com.example.DiversWorld {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.sql;
 
 
-    opens com.example.applicazione to javafx.fxml;
-    exports com.example.applicazione;
+    opens com.example.DiversWorld to javafx.fxml;
+    exports com.example.DiversWorld;
 }

@@ -4,7 +4,7 @@ import com.example.DiversWorld.Controller.Grafico.ProfileManagement;
 
 import java.util.Date;
 
-public class AccountRegistrationBean {
+public class AccountRegistrationBean implements Bean{
     private String name;
     private String lastname;
     private String license;

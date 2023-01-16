@@ -1,5 +1,9 @@
 package com.example.DiversWorld.DB;
-/**
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
 public class MyConnection {
     private static MyConnection instance = null;
     private Connection con;
@@ -9,6 +13,9 @@ public class MyConnection {
     private String passwordDB = "root";
     private String driver = "com.mysql.cj.jdbc.Driver";
 
+    /**
+     * SINGLETON PATTERN application
+     */
     private MyConnection() {
         try {
             Class.forName(driver);
@@ -29,4 +36,3 @@ public class MyConnection {
 
 }
 
-*/

@@ -1,6 +1,6 @@
 package com.example.DiversWorld.Controller.Grafico;
 
-import com.example.DiversWorld.UserBean;
+import com.example.DiversWorld.Bean.UserBean;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

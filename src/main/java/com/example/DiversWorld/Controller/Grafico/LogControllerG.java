@@ -1,6 +1,11 @@
 package com.example.DiversWorld.Controller.Grafico;
 
-import com.example.DiversWorld.LogBean;
+import com.example.DiversWorld.Bean.AccountRegistrationBean;
+import com.example.DiversWorld.Bean.LogBean;
+import com.example.DiversWorld.Bean.UserBean;
+import com.example.DiversWorld.Controller.Applicativo.LogInControllerApplicativo;
+import com.example.DiversWorld.Exceptions.AlreadyRegisteredUserException;
+import com.example.DiversWorld.Exceptions.WrongLoginCredentialException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -20,8 +25,9 @@ public class LogControllerG {
     private LogBean bean = new LogBean();
     /**
      * connessione con il controller applicativo del login
-     * private LogInControllerApplicativo log = new LogInControllerApplicativo();
       */
+    private LogInControllerApplicativo log = new LogInControllerApplicativo();
+    private AccountRegistrationBean bean1 = new AccountRegistrationBean();
 
     @FXML
     private Button account;
@@ -69,21 +75,25 @@ public class LogControllerG {
         primaryStage.setTitle("Login");
         primaryStage.setScene(new Scene(root, 600, 333));
         primaryStage.show();
+        try {
+            log.register(bean1);
+        } catch (AlreadyRegisteredUserException e){
+
+        }
     }
 
     @FXML
     void logButtonClicked(ActionEvent event) {
        bean.setUserID(textUser.getText());
        bean.setPassword(textPass.getText());
-      /** try{
-       * log.logButtonClicked(bean);
-       * userBean me = log.getUserByLoginData(bean);
-       * bundle.addBean("loggedUser", me);
-       * bundle.addObject("mailbox", log.connect(me));
+       try{
+           log.login(bean);
+           UserBean me = log.getUserByLoginData(bean);
+           //bundle.addBean("loggedUser", me);
 
        }catch (WrongLoginCredentialException e1) {
        errorLabel.setText("Wrong credentials supplied, check your Email and Password!");
-       };*/
+       };
     }
     @FXML
     void menuButtonClicked(ActionEvent event) throws IOException {

@@ -1,6 +1,6 @@
 package com.example.DiversWorld.Bean;
 
-public class LogBean {
+public class LogBean implements Bean {
     /**
      * vanno controllati: il campo data  è stato rimpito nel formato MM/DD/YYYY
      * se nome e cognome sono solo caratteri
@@ -11,11 +11,9 @@ public class LogBean {
     protected String password;
 
     public void setUserID(String id){
-        // intedo la mail dell'utente
-        // non uso username particolari
         this.userID = id;
     }
-    public String getUserId(){
+    public String getUserID(){
         return userID;
     }
 

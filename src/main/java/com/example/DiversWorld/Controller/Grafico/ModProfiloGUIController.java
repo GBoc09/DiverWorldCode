@@ -32,9 +32,6 @@ public class ModProfiloGUIController {
     private Button menu;
 
     @FXML
-    private Button modPic;
-
-    @FXML
     private TextField pass;
 
     @FXML
@@ -84,10 +81,6 @@ public class ModProfiloGUIController {
         // think about
     }
 
-    @FXML
-    void modPic(ActionEvent event) {
-        // think about
-    }
 
     @FXML
     void saveModifiche(ActionEvent event) {
